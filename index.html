@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/okno.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background-image="assets/evangelism.jpg" , data-background-size="cover"></section>
+			<section>
+				<section>
+					<h1><img class="ferris-head" src="assets/rustacean-flat-gesture.svg">Rust quesako ?</h1>
+				</section>
+				<section>
+					<ul>
+						<h2>Why Rust? </h4>
+							<li class="fragment">Performance : <i>&ldquo;fast and memory efficient&ldquo;</i></li>
+							<li class="fragment">Reliability : <i>&ldquo;memory safety and thread safety&ldquo;</i></li>
+							<li class="fragment">Productivity : <i>&ldquo;great documentation, friendly
+									compiler...etc&ldquo;</i></li>
+					</ul>
+				</section>
+				<section>
+					<h2>Et en français ?</h4>
+						<ul>
+							<li class="fragment">Des performances comparable à C</li>
+							<li class="fragment">Une classe entière de bugs éliminée à la compilation</li>
+							<li class="fragment">Pas de situations de competition dans les contextes concurrents</li>
+							<li class="fragment">Un écosystème à l'état de l'art</li>
+						</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Mutiparadigme</h2>
+				</section>
+				<section>
+					<h4>Fonctionel</h4>
+					<ul>
+						<li class="fragment"> Lambda/Closure <span class="checked">✔️</span> </li>
+						<li class="fragment"> Expressions over statement <span class="checked">✔️</span> </li>
+						<li class="fragment"> Enums & Pattern Matching <span class="checked">✔️</span></li>
+						<li class="fragment"> And more ...</li>
+					</ul>
+				</section>
+
+				<section>
+					<h5>Example : Functor </h5>
+					<img src="assets/functor.png" class="raw-image">
+				</section>
+
+				<section>
+					<h4>Orienté objet</h4>
+					<ul>
+						<li class="fragment"> Data + Behavior <span class="checked">✔️</span></li>
+						<li class="fragment"> Encapsulation <span class="checked">✔️</span></li>
+						<li class="fragment"> Inheritance ❌</li>
+					</ul>
+				</section>
+				<section>
+					<h5> Polymorphisme </h5>
+					<img src="assets/polymorphism.png" class="raw-image" style="width: 60%;">
+				</section>
+				<section>
+					<h4>Zero cost abstraction</h4>
+					<blockquote cite="Sroustrup">
+						&ldquo;C++ implementations obey the zero-overhead principle: What you don't use, you don't pay
+						for. And further: What you do use, you couldn't hand code any better.&rdquo;
+					</blockquote>
+					-- <a href=https://en.wikipedia.org/wiki/Bjarne_Stroustrup>Stroustrup </a> </section> </section>
+						<section>
+						<section>
+							<h2>Rapide et sûr</h2>
+						</section>
+						<section>
+							<blockquote cite="un vieux proverbe rustaceen">
+								&ldquo;The safest program is the program that doesn't compile&rdquo;
+							</blockquote>
+							-- ancient Rust proverb
+						</section>
+						<section>
+							<h3>Vous avez dit <i>memory safe?</i></h3>
+							<ul>
+								<li>Invalid memory access</li>
+								<li>Using uninitialized variable</li>
+								<li>Type error</li>
+								<li>Dangling pointer</li>
+								<li>Race condition</li>
+							</ul>
+						</section>
+						<section>
+							<h3> Emprunt & Propriété </h3>
+						</section>
+						<section>
+							<h3>Ownership rule</h3>
+							<ul>
+								<li>Toute valeur a une variable appelé sont possesseur (owner).</li>
+								<li>Il ne peut y avoir qu'un seul possesseur à la fois pour une valeur.</li>
+								<li>Quand le possesseur sort du contexte (scope), la valeur est éffacée.</li>
+							</ul>
+						</section>
+						<section>
+							<h3>Borrow rule</h3>
+							<ul>
+								<li>À tout moment, il est possible d'avoir soit une et une seule
+									référence mutable ou n'importe quel nombre de référence immutable.</li>
+								<li>Une référence doit toujours être valide.</li>
+							</ul>
+						</section>
+						<section>
+							<img class="raw-image" src="assets/tweet_foot_not_mutable.png">
+						</section>
+				</section>
+				<section>
+					<section>
+						<h2>Rust dans la vraie vie</h2>
+					</section>
+					<section>
+						<h3> Écosysteme</h3>
+						<ul>
+							<li> <a href="https://crate.io"> crates.io</a> </li>
+							<li> <a href="http://www.arewewebyet.org/"> Are We Web Yet ?</a> </li>
+							<li> <a href="http://arewegameyet.com/"> Are We Game Yet ?</a> </li>
+							<li> <a href="https://github.com/RustAudio/areweaudioyet"> Are We Audio Yet ? </a> </li>
+							<li> <a href="https://areweideyet.com/"> Are we (I)DE yet ?</a> </li>
+							<li> <a href="https://areweasyncyet.rs/"> Are we async yet ?</a> </li>
+							<li> <a href="https://www.arewelearningyet.com/"> Are we learning yet ?</a> </li>
+							<li> <a href="https://areweguiyet.com/newsfeed/2019-01-13_rust2019.html"> Are we GUI yet
+									?</a>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3> Communauté </h3>
+						<ul>
+							<li> <a href="https://www.rust-lang.org/policies/code-of-conduct"> The Rust Code of
+									conduct</a> </li>
+							<li> <a href="https://rustbeginners.github.io/awesome-rust-mentors/"> Get a mentor </a>
+							</li>
+							<li> Core team meetings </li>
+						</ul>
+					</section>
+					<section>
+						<h3>La vraie question : <span>Rust Vs Go</span></h3>
+
+						<div class="flex-container">
+							<img class="fragment raw-image" src="assets/rust_vs_go_1.png">
+							<img class="fragment raw-image" src="assets/rust_vs_go_2.png">
+						</div>
+					</section>
+					<section>
+						<h3> Documentation & ressources</h3>
+
+						<ul>
+							<li><a href="https://doc.rust-lang.org/book/"> The Book </a></li>
+							<li><a href="https://doc.rust-lang.org/std/?search="> Rust doc </a></li>
+							<li><a href="https://rust-lang-nursery.github.io/rust-cookbook/web/url.html"> Rust Cookbook
+								</a>
+							</li>
+							<li> Un sujet un livre </li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Rust + craft = <span class="heart">❤</span></h2>
+					</section>
+					<section>
+						<h4>Écrire de la doc</h4>
+						<img class="raw-image" src="assets/rust_doc.png">
+					</section>
+					<section data-background-iframe="https://doc.rust-lang.org/std/" data-background-interactive>
+					</section>
+					<section>
+						<h4>Unit testing</h4>
+						<img src="assets/unit.png" class="raw-image">
+					</section>
+					<section>
+						<h4>Documentation testing</h4>
+						<img src="assets/doctest.png" class="raw-image">
+					</section>
+				</section>
+		</div>
+	</div>
+
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
+</html>
