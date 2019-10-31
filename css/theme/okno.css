@@ -1,12 +1,12 @@
 /**
- * Solarized Dark theme for reveal.js.
- * Author: Achim Staebler
- */
+* Solarized Dark theme for reveal.js.
+* Author: Achim Staebler
+*/
 @import url(../../lib/font/league-gothic/league-gothic.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /**
- * Solarized colors by Ethan Schoonover
- */
+* Solarized colors by Ethan Schoonover
+*/
 html * {
   color-profile: sRGB;
   rendering-intent: auto; }
@@ -14,23 +14,32 @@ html * {
 i {
   font-style: italic; }
 
-.checked {
-  color: green; }
-
-.flex-container {
-  display: flex;
-  justify-content: center; }
-
-.img-padded {
-  margin: 20px;
-  height: 10em; }
-
 .reveal .slides .ferris-head {
   height: 1em;
   border: none;
   padding: 10px;
   background: none;
   box-shadow: none; }
+
+.reveal .slides .img-raw {
+  background: none;
+  border: none;
+  box-shadow: none; }
+
+.reveal .slides .heart {
+  color: red; }
+
+.reveal .slides .checked {
+  color: green; }
+
+.reveal .slides .flex-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px; }
+
+.reveal .slides .img-padded {
+  margin: 40px;
+  height: 10em; }
 
 /*********************************************
  * GLOBAL STYLES

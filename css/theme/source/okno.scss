@@ -1,7 +1,7 @@
 /**
- * Solarized Dark theme for reveal.js.
- * Author: Achim Staebler
- */
+* Solarized Dark theme for reveal.js.
+* Author: Achim Staebler
+*/
 
 
 // Default mixins and settings -----------------
@@ -16,11 +16,11 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 
 /**
- * Solarized colors by Ethan Schoonover
- */
+* Solarized colors by Ethan Schoonover
+*/
 html * {
-	color-profile: sRGB;
-	rendering-intent: auto;
+    color-profile: sRGB;
+    rendering-intent: auto;
 }
 
 // Solarized colors
@@ -52,20 +52,6 @@ $selectionBackgroundColor: $magenta;
 
 i {
     font-style: italic;
-  }
-
-.checked  {
-    color: green;
-}
-
-.flex-container {
-    display: flex;
-    justify-content: center;
-}
-
-.img-padded {
-    margin: 20px;
-    height: 10em;
 }
 
 .reveal {
@@ -77,8 +63,33 @@ i {
             background: none;
             box-shadow: none;
         }
-    }
 
+        .img-raw {
+            background: none;
+            border: none;
+            box-shadow: none;
+        }
+
+        .heart  {
+            color: red;
+        }
+
+        .checked  {
+            color: green;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            margin: 40px;
+        }
+
+        .img-padded {
+            margin: 40px;
+            height: 10em;
+        }
+        
+    }
 }
 
 // Theme template ------------------------------
