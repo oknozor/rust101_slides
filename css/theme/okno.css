@@ -21,6 +21,12 @@ i {
   background: none;
   box-shadow: none; }
 
+.reveal .slides .simple-code {
+  font-size: xx-large; }
+
+.reveal .slides .small-text {
+  font-size: x-large; }
+
 .reveal .slides .img-raw {
   background: none;
   border: none;

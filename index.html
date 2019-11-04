@@ -56,21 +56,6 @@
 					<h2>Mutiparadigme</h2>
 				</section>
 				<section>
-					<h4>Fonctionel</h4>
-					<ul>
-						<li class="fragment"> Lambda/Closure <span class="checked">✔️</span> </li>
-						<li class="fragment"> Expressions over statement <span class="checked">✔️</span> </li>
-						<li class="fragment"> Enums & Pattern Matching <span class="checked">✔️</span></li>
-						<li class="fragment"> And more ...</li>
-					</ul>
-				</section>
-
-				<section>
-					<h5>Example : Functor </h5>
-					<img src="assets/functor.png" class="img-raw">
-				</section>
-
-				<section>
 					<h4>Orienté objet</h4>
 					<ul>
 						<li class="fragment"> Data + Behavior <span class="checked">✔️</span></li>
@@ -82,6 +67,30 @@
 					<h5> Polymorphisme </h5>
 					<img src="assets/polymorphism.png" class="img-raw" style="width: 60%;">
 				</section>
+				<section>
+					<h4>Fonctionnel</h4>
+					<ul>
+						<li class="fragment"> Lambda/Closure <span class="checked">✔️</span> </li>
+						<li class="fragment"> Expressions over statement <span class="checked">✔️</span> </li>
+						<li class="fragment"> Enums & Pattern Matching <span class="checked">✔️</span></li>
+						<li class="fragment"> And more ...</li>
+					</ul>
+				</section>
+
+				<section>
+					<h5>Enums & Pattern Matching </h5>
+					<img src="assets/enum_ex.png" class="img-raw" style="width: 60%;">
+				</section>
+				<section>
+					<h5>Expressions over statement</h5>
+					<img src="assets/expression_ex.png" class="img-raw" style="width: 60%;">
+				</section>
+				<section>
+					<h5>Loop Vs Iterators</h5>
+					<img src="assets/loop.png" class="img-raw" style="width: 70%;">
+					<img src="assets/iterator.png" class="img-raw" style="width: 70%;">
+				</section>
+
 				<section>
 					<h4>Zero cost abstraction</h4>
 					<blockquote cite="Sroustrup">
@@ -134,90 +143,132 @@
 				</section>
 				<section>
 					<section>
-						<h2>Rust dans la vraie vie</h2>
+						<h2><img class="ferris-head" src="assets/panics.svg"> Results & Options</h2>
 					</section>
 					<section>
-						<h3> Écosysteme</h3>
+						<h3>Don't panic!</h3>
 						<ul>
-							<li> <a href="https://crates.io"> crates.io</a> </li>
-							<li> <a href="http://www.arewewebyet.org/"> Are We Web Yet ?</a> </li>
-							<li> <a href="http://arewegameyet.com/"> Are We Game Yet ?</a> </li>
-							<li> <a href="https://github.com/RustAudio/areweaudioyet"> Are We Audio Yet ? </a> </li>
-							<li> <a href="https://areweideyet.com/"> Are we (I)DE yet ?</a> </li>
-							<li> <a href="https://areweasyncyet.rs/"> Are we async yet ?</a> </li>
-							<li> <a href="https://www.arewelearningyet.com/"> Are we learning yet ?</a> </li>
-							<li> <a href="https://areweguiyet.com/newsfeed/2019-01-13_rust2019.html"> Are we GUI yet
-									?</a>
-							</li>
+							<li> Unrecoverable error : <code class="hljs simple-code">panic!("😱 😱 😱")</code> </li>
+							<li> Recoverable error : <code class="hljs simple-code">Result&lt;T, E&gt;</code></li>
 						</ul>
 					</section>
 					<section>
-						<h3> Communauté </h3>
-						<ul>
-							<li> <a href="https://www.rust-lang.org/policies/code-of-conduct"> The Rust Code of
-									conduct</a> </li>
-							<li> <a href="https://rustbeginners.github.io/awesome-rust-mentors/"> Get a mentor </a>
-							</li>
-							<li> <a href="https://www.youtube.com/channel/UCaYhcUwRBNscFNUKTjgPFiA/featured"> Core team
-									meetings </a> </li>
-						</ul>
+						<img src="assets/result.png" class="img-raw">
 					</section>
 					<section>
-						<h3>La vraie question : <span>Rust Vs Go</span></h3>
-
-						<div class="flex-container">
-							<img class="fragment img-raw img-padded" src="assets/rust_vs_go_1.png">
-							<img class="fragment img-raw img-padded" src="assets/rust_vs_go_2.png">
-						</div>
+						<h3>Options</h3>
+						<blockquote cite="Tony Hoare" class=small-text>
+							I call it my billion-dollar mistake. At that time, I was designing the first
+							comprehensive
+							type system for references in an object-oriented language. My goal was to ensure that
+							all use
+							of references should be absolutely safe, with checking performed automatically by the
+							compiler.
+							But I couldn’t resist the temptation to put in a null reference, simply because it was
+							so easy to implement.
+							This has led to innumerable errors, vulnerabilities, and system crashes, which have
+							probably caused a billion
+							dollars of pain and damage in the last forty years.
+						</blockquote>
+						-- <a href=https://en.wikipedia.org/wiki/Tony_Hoare>T. Hoare </a> </section> <section>
+							<img src="assets/option.png" class="img-raw">
 					</section>
 					<section>
-						<h3> Documentation & ressources</h3>
-
-						<ul>
-							<li><a href="https://doc.rust-lang.org/book/"> The Book </a></li>
-							<li><a href="https://doc.rust-lang.org/std/?search="> Rust doc </a></li>
-							<li><a href="https://rust-lang-nursery.github.io/rust-cookbook/web/url.html"> Rust Cookbook
-								</a>
-							</li>
-							<li> <a href="https://rust-lang.github.io/mdBook/"> mdBook</a> everywhere </li>
-						</ul>
+						<img src="assets/option_example.png" class="img-raw">
 					</section>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Rust dans la vraie vie</h2>
 				</section>
 				<section>
-					<section>
-						<h2>Rust + craft = <span class="heart">❤</span></h2>
-					</section>
-					<section>
-						<h4>Écrire de la doc</h4>
-						<img class="img-raw" src="assets/rust_doc.png">
-					</section>
-					<section data-background-iframe="https://doc.rust-lang.org/std/" data-background-interactive>
-					</section>
-					<section>
-						<h4>Unit testing</h4>
-						<img src="assets/unit.png" class="img-raw">
-					</section>
-					<section>
-						<h4>Documentation testing</h4>
-						<img src="assets/doctest.png" class="img-raw">
-					</section>
-					<section>
-						<h4>Pair programming with the compiler</h4>
-						<script id="asciicast-pPqQlEIhkSGg6HFKieUrxq0oS"
-							src="https://asciinema.org/a/pPqQlEIhkSGg6HFKieUrxq0oS.js" async>
-							</script>
-					</section>
-					<section>
-						<h4>Tooling</h4>
-						<ul>
-							<li> <a href="https://doc.rust-lang.org/cargo/">Cargo</a></li>
-							<li> <a href="https://rust-lang.github.io/rust-clippy/current/index.html">Clippy</a></li>
-							<li><a href="https://github.com/rust-lang/rustfmt">Rustfmt</a></li>
-							<li><a href="https://doc.rust-lang.org/error-index.html">The Rust Compiler Error Index</a>
-							</li>
-						</ul>
-					</section>
+					<h3> Écosysteme</h3>
+					<ul>
+						<li> <a href="https://crates.io"> crates.io</a> </li>
+						<li> <a href="http://www.arewewebyet.org/"> Are We Web Yet ?</a> </li>
+						<li> <a href="http://arewegameyet.com/"> Are We Game Yet ?</a> </li>
+						<li> <a href="https://github.com/RustAudio/areweaudioyet"> Are We Audio Yet ? </a> </li>
+						<li> <a href="https://areweideyet.com/"> Are we (I)DE yet ?</a> </li>
+						<li> <a href="https://areweasyncyet.rs/"> Are we async yet ?</a> </li>
+						<li> <a href="https://www.arewelearningyet.com/"> Are we learning yet ?</a> </li>
+						<li> <a href="https://areweguiyet.com/newsfeed/2019-01-13_rust2019.html"> Are we GUI yet
+								?</a>
+						</li>
+					</ul>
 				</section>
+				<section>
+					<h3> Communauté </h3>
+					<ul>
+						<li> <a href="https://www.rust-lang.org/policies/code-of-conduct"> The Rust Code of
+								conduct</a> </li>
+						<li> <a href="https://rustbeginners.github.io/awesome-rust-mentors/"> Get a mentor </a>
+						</li>
+						<li> <a href="https://www.youtube.com/channel/UCaYhcUwRBNscFNUKTjgPFiA/featured"> Core team
+								meetings </a> </li>
+					</ul>
+				</section>
+				<section>
+					<h3>La vraie question : <span>Rust Vs Go</span></h3>
+
+					<div class="flex-container">
+						<img class="fragment img-raw img-padded" src="assets/rust_vs_go_1.png">
+						<img class="fragment img-raw img-padded" src="assets/rust_vs_go_2.png">
+					</div>
+				</section>
+				<section>
+					<h3> Documentation & ressources</h3>
+
+					<ul>
+						<li><a href="https://doc.rust-lang.org/book/"> The Book </a></li>
+						<li><a href="https://doc.rust-lang.org/std/?search="> Rust doc </a></li>
+						<li><a href="https://rust-lang-nursery.github.io/rust-cookbook/web/url.html"> Rust Cookbook
+							</a>
+						</li>
+						<li> <a href="https://rust-lang.github.io/mdBook/"> mdBook</a> everywhere </li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Rust + craft = <span class="heart">❤</span></h2>
+				</section>
+				<section>
+					<h4>Écrire de la doc</h4>
+					<img class="img-raw" src="assets/rust_doc.png">
+				</section>
+				<section data-background-iframe="https://doc.rust-lang.org/std/" data-background-interactive>
+				</section>
+				<section>
+					<h4>Unit testing</h4>
+					<img src="assets/unit.png" class="img-raw">
+				</section>
+				<section>
+					<h4>Documentation testing</h4>
+					<img src="assets/doctest.png" class="img-raw">
+				</section>
+				<section>
+					<h4>Pair programming with the compiler</h4>
+					<img src="assets/compiler_example.png" class="img-raw">
+				</section>
+				<section>
+					<img src="assets/rustc_hint.png" class="img-raw">
+				</section>
+				<section>
+					<h4>Tooling</h4>
+					<ul>
+						<li> <a href="https://doc.rust-lang.org/cargo/">Cargo</a></li>
+						<li> <a href="https://rust-lang.github.io/rust-clippy/current/index.html">Clippy</a></li>
+						<li><a href="https://github.com/rust-lang/rustfmt">Rustfmt</a></li>
+						<li><a href="https://doc.rust-lang.org/error-index.html">The Rust Compiler Error Index</a>
+						</li>
+					</ul>
+				</section>
+			</section>
+
+			<section data-background-image="assets/animated_ferris.gif">
+
+			</section>
 		</div>
 	</div>
 
